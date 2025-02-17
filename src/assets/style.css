@@ -1,0 +1,4 @@
+@import "./libs/reset.css";
+@import "./sections/header.css";
+@import "./sections/content.css";
+@import "./sections/intro.css";

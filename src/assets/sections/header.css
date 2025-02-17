@@ -1,0 +1,24 @@
+header {
+  background: linear-gradient(45deg, #4a90e2, #9013fe);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+.logo {
+  margin-left: 50px;
+  font-size: 24px;
+}
+header .title {
+  font-size: 1.8em;
+}
+header .extra {
+  font-size: 1em;
+}
+
+/* <aside className="sidebar">
+<Link className="sidebar-link">{<LuBook />} Продаваемые книги</Link>
+<Link className="sidebar-link">{<LuBook />} Избранные книги</Link>
+<Link className="sidebar-link">{<LuBook />} Популярные книги</Link>
+</aside>  */

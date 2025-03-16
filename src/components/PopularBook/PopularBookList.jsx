@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
 import PopularBookItem from "./PopularBookItem";
 
-export default function PopularBookList() {
+export default function FavoriteBookList() {
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -9,14 +10,8 @@ export default function PopularBookList() {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await fetch(
-          "https://api.itbook.store/1.0/search/mongodb"
-        );
-        if (!response.ok) {
-          throw new Error("Ошибка загрузки данных");
-        }
-        const data = await response.json();
-        setBooks(data.books);
+        const response = await axios.get("https://api.itbook.store/1.0/new");
+        setBooks(response.data.books);
       } catch (err) {
         setError(err.message);
       } finally {

@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { LuBook } from "react-icons/lu";
 import { FaHome } from "react-icons/fa";
+import { IoSettingsOutline } from "react-icons/io5";
+
 
 export default function Sidebar() {
   return (
@@ -14,6 +16,9 @@ export default function Sidebar() {
       </Link>
       <Link to="/popular" className="sidebar-link">
         {<LuBook />} Популярные книги
+      </Link>
+      <Link to="/settings" className="sidebar-link">
+      <IoSettingsOutline /> Настройка
       </Link>
     </aside>
   );

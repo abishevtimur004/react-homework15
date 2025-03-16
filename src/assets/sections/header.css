@@ -17,8 +17,3 @@ header .extra {
   font-size: 1em;
 }
 
-/* <aside className="sidebar">
-<Link className="sidebar-link">{<LuBook />} Продаваемые книги</Link>
-<Link className="sidebar-link">{<LuBook />} Избранные книги</Link>
-<Link className="sidebar-link">{<LuBook />} Популярные книги</Link>
-</aside>  */
